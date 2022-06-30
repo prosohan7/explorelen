@@ -1,0 +1,30 @@
+.site-header {
+    padding: 10px 0;
+}
+p.site-title a {font-size: 22px;font-weight: 700;text-decoration: none;}
+
+p.site-title {
+    margin: 0;
+}
+.header-button a {
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #3c3c3c;
+    color: #333;
+    padding: 10px 20px;
+}
+.explorelen-main-menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.explorelen-main-menu ul li {
+    display: inline-block;
+}
+
+.explorelen-main-menu ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 20px;
+}
