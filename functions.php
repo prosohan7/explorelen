@@ -189,5 +189,5 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 /**
  * Include theme options and metabox framework.
  */
-require get_template_directory() . '/inc/admin/theme-option.php';
+require get_template_directory() . '/inc/theme-options/theme-options.php';
 
