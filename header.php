@@ -25,20 +25,6 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'explorelen' ); ?></a>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-2 align-self-center">
-						<?php get_template_part('template-parts/header/logo'); ?>
-					</div>
-					<div class="col-xl-7 text-center">
-						<?php get_template_part('template-parts/header/menu'); ?>
-					</div>
-					<div class="col-xl-3 align-self-center">
-						<?php get_template_part('template-parts/header/button'); ?>
-					</div>
-				</div>
-			</div>
-		</div><!-- .site-branding -->
-	</header><!-- #masthead -->
+<?php
+
+ do_action( 'theme_header_part' );

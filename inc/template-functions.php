@@ -35,3 +35,17 @@ function explorelen_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'explorelen_pingback_header' );
+
+
+
+/**
+ * Header function
+ */
+
+function explor_header_builder(){
+	/**
+	 * Call header template
+	 * hook: explor_header_builder - 10
+	 */
+	get_template_part( 'template-parts/header/header', 'default');
+}
