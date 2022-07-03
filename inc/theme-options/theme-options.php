@@ -314,11 +314,46 @@ Redux::set_help_sidebar( $opt_name, $content );
  * ---> START SECTIONS
  */
 
+// -> START Explorelen Fields
+Redux::set_section(
+	$opt_name,
+	array(
+		'title'            => esc_html__( 'Explorelen Fields', 'your-textdomain-here' ),
+		'id'               => 'exp-basic',
+		'desc'             => esc_html__( 'These are Explorelen fields!', 'your-textdomain-here' ),
+		'customizer_width' => '400px',
+		'icon'             => 'el el-home',
+		'fields'			=> array(
+			array(
+				'id'       => 'opt-demo-bg',
+				'type'     => 'background',
+				'title'    => esc_html__('Body Background', 'your-project-name'),
+				'subtitle' => esc_html__('Body background with image, color, etc.', 'your-project-name'),
+				'desc'     => esc_html__('This is the description field, again good for additional info.', 'your-project-name'),
+				'default'  => array(
+					'background-color' => '#1e73be',
+				)
+			),
+			array(
+				'id'       => 'opt-theme-logo',
+				'type'     => 'media', 
+				'url'      => false,
+				'title'    => esc_html__('Theme Logo', 'your-textdomain-here'),
+				'desc'     => esc_html__('Basic media uploader with disabled URL input field.', 'your-textdomain-here'),
+				'subtitle' => esc_html__('Upload any media using the WordPress native uploader', 'your-textdomain-here'),
+				'default'  => array(
+					'url'=>'https://s.wordpress.org/style/images/codeispoetry.png'
+				),
+			)
+		),
+	)
+);
+
 // -> START Basic Fields
 Redux::set_section(
 	$opt_name,
 	array(
-		'title'            => esc_html__( 'Basic Fields', 'your-textdomain-here' ),
+		'title'            => esc_html__( 'Basic test Fields', 'your-textdomain-here' ),
 		'id'               => 'basic',
 		'desc'             => esc_html__( 'These are really basic fields!', 'your-textdomain-here' ),
 		'customizer_width' => '400px',
